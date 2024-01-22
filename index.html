@@ -23,7 +23,7 @@
 
 <body class="font-manrope">
     <!-- navigation bar -->
-    <section class="container mx-auto px-4 py-4">
+    <section class="container mx-auto px-2 py-4">
         <div class="navbar bg-base-100">
             <div class="navbar-start">
                 <div class="hidden md:block text-4xl font-extrabold">Sport's</div>
@@ -41,7 +41,10 @@
                         <li><a>About</a></li>
                         <li><a>Pages</a></li>
                         <li><a>Blog</a></li>
-                        <li><a>Contac</a>t</li>
+                        <li><a>Contac</a></li>
+                        <button class="btn btn-ghost btn-circle">
+                            <img src="icons/search.png" alt="">
+                        </button>
                     </ul>
                     <a class="md:hidden btn btn-ghost text-2xl font-extrabold">Sport's</a>
                 </div>
@@ -65,6 +68,47 @@
                     </div>
                 </button>
             </div>
+        </div>
+    </section>
+
+    <!-- carousel section -->
+    <section class="container mx-auto px-4 md:relative">
+        <div class="carousel w-full md:h-[500px]">
+            <div id="slide1" class="carousel-item relative w-full">
+                <img src="images/1.png" class="w-full rounded-2xl" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="images/2.png" class="w-full rounded-2xl" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="images/3.png" class="w-full rounded-2xl" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+                <img src="images/4.png" class="w-full rounded-2xl" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+        <div
+            class="bg-black px-4 py-4 mt-4 space-y-2 rounded-2xl text-white md:w-[500px] md:mr-12 md:mb-12 md:absolute md:bottom-0 md:right-0">
+            <h2 class="font-extrabold text-lg">Never meet your heroes, because they're</h2>
+            <p class="font-medium text-sm opacity-60">The expression, You should never meet your heroes, means that the
+                people you see and admire on TV
+                may disappoint</p>
         </div>
     </section>
 </body>
